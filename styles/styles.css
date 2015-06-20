@@ -1,5 +1,6 @@
 body {
     font-size: 12px;
+    background-color: #313131;
 }
 
 /*HEADER*/
@@ -15,7 +16,7 @@ body {
 .footer {
     background-color: #313131;
     text-align: center;
-    padding: 45px 0px 15px 0px;
+    padding: 20px 0px 15px 0px;
 }
 
 /*ASIDE*/
@@ -59,7 +60,8 @@ article.content {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20px;
+    padding: 25px;
+    padding-bottom: 28px;
 }
 
 .content .conteiner-btt {
@@ -154,4 +156,109 @@ article.content {
     float: right;
     position: absolute;
     right: -25px;
+}
+
+
+@media (max-width: 1400px) {
+    body {
+        font-size: 10px;
+    }
+    .content .col1 {
+        width: 412px;
+        padding: 20px 40px 0px 40px;
+    }
+    .content .col1 p:nth-child(5) {
+        margin-top: -35px;
+    }
+    .content .col1 p:nth-child(4) {
+        letter-spacing: -0.04em;
+    }
+    .header img, .footer img {
+        width: 155px;
+    }
+    .arrow img {
+        width: 12px;
+    }
+    .info-cont li {
+        padding: 12px;
+    }
+    .content .conteiner-btt .buttom {
+        padding: 10px 70px 10px 70px;
+    }
+    .content .conteiner-btt {
+        margin-top: 28px;
+    }
+    .figure img {
+        width: 400px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 8px;
+    }
+    .content .col1 {
+        width: 330px;
+    }
+    .header img, .footer img {
+        width: 115px;
+    }
+    .arrow img {
+        width: 10px;
+    }
+    .info-cont li {
+        padding: 10px;
+    }
+    .figure img {
+        width: 315px;
+    }
+}
+
+
+@media (max-width: 740px) {
+    body {
+        font-size: 10px;
+    }
+    article.content {
+        padding: 18px;
+    }
+    .content .col1 {
+        width: 70%;
+        margin: inherit;
+    }
+    .header img, .footer img {
+        width: 150px;
+    }
+    .arrow img {
+        width: 10px;
+    }
+    .info-cont li {
+        padding: 10px;
+    }
+    figure {
+        margin: 28em 6px;
+    }
+    .figure img {
+        width: 250px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    body {
+        font-size: 7px;
+    }
+    .figure img {
+        width: 180px;
+    }
+    .info-cont .option {
+        font-size: 1.6em;
+    }
+    .content .conteiner-btt {
+        width: inherit;
+    }
+    .content .conteiner-btt .buttom {
+        white-space: nowrap;
+    }
 }
